@@ -10,8 +10,10 @@ client = Bot(command_prefix=BOT_PREFIX)
 
 @client.event
 async def on_ready():
-  print("I'm in")
-  print(client.user)
+  print('Logged in as')
+  print(bot.user.name)
+  print(bot.user.id)
+  print('------')
 
 @client.command(name='TiltBot', 
                 description="Tilts whoever calls the bot.",
