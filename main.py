@@ -6,7 +6,7 @@ from discord.ext.commands import Bot
 
 BOT_PREFIX = ("!")
 
-client = Bot(command_prefix=BOT_PREFIX)
+client = commands.Bot(command_prefix=BOT_PREFIX)
 
 @client.event
 async def on_ready():
@@ -42,6 +42,5 @@ async def tilt_bot(context):
   ]
   await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
-keep_alive()
 token = os.environ.get("DISCORD_BOT_SECRET")
 client.run(token)
