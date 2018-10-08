@@ -5,7 +5,6 @@ import discord.ext
 from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
-import simplejson as json
 
 BOT_PREFIX = ("!")
 bot_token = os.environ['BOT_TOKEN']
