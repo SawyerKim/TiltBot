@@ -8,7 +8,7 @@ import asyncio
 import simplejson as json
 
 BOT_PREFIX = ("!")
-BOT_TOKEN = os.environ['BOT_TOKEN']
+bot_token = process.environ['BOT_TOKEN']
 
 client = commands.Bot(command_prefix=BOT_PREFIX)
 
@@ -46,4 +46,4 @@ async def tilt_bot(context):
   ]
   await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
-bot.run(BOT_TOKEN)
+bot.run(bot_token)
