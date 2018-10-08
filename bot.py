@@ -8,7 +8,7 @@ import asyncio
 import simplejson as json
 
 BOT_PREFIX = ("!")
-bot_token = process.environ['BOT_TOKEN']
+bot_token = os.environ['BOT_TOKEN']
 
 client = commands.Bot(command_prefix=BOT_PREFIX)
 
