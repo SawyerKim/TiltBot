@@ -28,6 +28,8 @@ async def tilt_bot(context):
     'Get fucked',
     'I didn\'t know bots could ping me',
     'Don\'t worry, I\'m sure you can ask Ryse to boost you too',
+    'I wouldn\'t bother asking anyone to boost you, you\'re definitely too heavy',
+    'Hey can you play on my account for a few days? I want to get to bronze without throwing',
   ]
   await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
