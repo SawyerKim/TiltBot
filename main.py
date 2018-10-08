@@ -1,12 +1,11 @@
 import discord
 import os
 import random
-from keep_alive import keep_alive
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ("!")
 
-client = commands.Bot(command_prefix=BOT_PREFIX)
+client = Bot(command_prefix=BOT_PREFIX)
 
 @client.event
 async def on_ready():
