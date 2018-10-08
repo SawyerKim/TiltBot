@@ -1,9 +1,13 @@
 import discord
 import os
 import random
+import discord.ext
 from discord.ext import commands
+from discord.ext.commands import Bot
+import asyncio
 
 BOT_PREFIX = ("!")
+BOT_TOKEN = os.environ['BOT_TOKEN']
 
 client = commands.Bot(command_prefix=BOT_PREFIX)
 
@@ -41,5 +45,4 @@ async def tilt_bot(context):
   ]
   await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
-token = os.environ.get("DISCORD_BOT_SECRET")
-client.run(token)
+bot.run(BOT_TOKEN)
