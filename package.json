@@ -1,0 +1,9 @@
+{
+  "name": "TiltBot",
+  "description": "Tilt caller",
+  "version": "0.0.0",
+  "main": "bot.py",
+  "scripts": {
+    "start": "python bot.py"
+  }
+}
