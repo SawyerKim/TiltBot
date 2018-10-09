@@ -4,12 +4,15 @@ import random
 import discord.ext
 from discord.ext import commands
 from discord.ext.commands import Bot
+from discord import Guild
 import asyncio
 
 BOT_PREFIX = ("!")
 bot_token = os.environ.get("DISCORD_BOT_SECRET")
 
 client = commands.Bot(command_prefix=BOT_PREFIX)
+#server_id = get.
+#server = discord.Server(get
 
 @client.event
 async def on_ready():
@@ -47,4 +50,13 @@ async def tilt_bot(context):
   ]
   await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
+#@client.command(name='TeamGenBot',
+#                description='calls random players',
+#                brief='call rand players',
+#                aliases=['genteam', 'GenTeam', 'Genteam', 'GenTeam'],
+#                pass_context=True)
+#async def teamgen_bot(context):
+#  await client.say(get.guild.
+                   
+                        
 client.run(bot_token)
