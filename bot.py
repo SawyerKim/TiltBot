@@ -56,7 +56,7 @@ async def tilt_bot(context):
                 aliases=['generate'],
                 pass_context=True)
 async def teamgen_bot(context):
-  await client.say(random.choice(guild.members))
+  await client.say(random.choice(server.members))
                    
                         
 client.run(bot_token)
