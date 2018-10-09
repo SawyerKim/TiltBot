@@ -50,13 +50,13 @@ async def tilt_bot(context):
   ]
   await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
-#@client.command(name='TeamGenBot',
-#                description='calls random players',
-#                brief='call rand players',
-#                aliases=['genteam', 'GenTeam', 'Genteam', 'GenTeam'],
-#                pass_context=True)
-#async def teamgen_bot(context):
-#  await client.say(get.guild.
+@client.command(name='TeamGenBot',
+                description='calls random players',
+                brief='call rand players',
+                aliases=['generate'],
+                pass_context=True)
+async def teamgen_bot(context):
+  await client.say(context.message.author.mention)
                    
                         
 client.run(bot_token)
