@@ -41,7 +41,7 @@ async def tilt_bot(context):
                 brief="Not tilting statements.",
                 aliases=['calm', 'relax', 'untilt'],
                 pass_context=True)
-async def tilt_bot(context):
+async def calm_bot(context):
   possible_responses = [
     'Just blame Saway',
     'They were smurfing, doesn\'t count',
@@ -55,7 +55,7 @@ async def tilt_bot(context):
                 brief='call rand players',
                 aliases=['generate'],
                 pass_context=True)
-async def tilt_bot(context):
+async def generate_bot(context):
   await client.say(message.guild.members.random().user.id)
                    
                         
