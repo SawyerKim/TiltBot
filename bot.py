@@ -30,7 +30,7 @@ async def tilt_bot(context):
   possible_responses = [
     'Get fucked',
     'I didn\'t know bots could ping me',
-    'Don\'t worry, I\'m sure you can ask Ryse to boost you too',
+    'Don\'t worry, I\'m sure you can ask Ryse to boost you',
     'I wouldn\'t bother asking anyone to boost you, you\'re definitely too heavy',
     'Hey can you play on my account for a few days? I want to get to bronze without throwing',
   ]
@@ -56,7 +56,7 @@ async def tilt_bot(context):
                 aliases=['generate'],
                 pass_context=True)
 async def teamgen_bot(context):
-  await client.say(context.message.author)
+  await client.say(random.choice(guild.members))
                    
                         
 client.run(bot_token)
