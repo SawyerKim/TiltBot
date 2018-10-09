@@ -4,7 +4,7 @@ import random
 import discord.ext
 from discord.ext import commands
 from discord.ext.commands import Bot
-from discord import Guild
+#from discord import Guild
 import asyncio
 
 BOT_PREFIX = ("!")
